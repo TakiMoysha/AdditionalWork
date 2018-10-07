@@ -13,5 +13,9 @@ public class Main {
         second.multiText();
         second.about();
 
+        BasicMath third = new BasicMath("+", 13, 32);
+
+        third.basicMath();
+
     }
 }

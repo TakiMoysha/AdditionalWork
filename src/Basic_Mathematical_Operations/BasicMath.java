@@ -6,18 +6,18 @@ public class BasicMath {
     int v1;
     int v2;
 
-    public static Integer basicMath(String op, int v1, int v2)
-    {
-        int result = 0;
-        if (op == "+") {
-            result = v1 + v2;
-        } if (op == "-") {
-        result = v1 - v2;
-    } if (op == "*") {
-        result = v1 * v2;
-    } if (op == "/") {
-        result = v1 / v2;
+    BasicMath(String op, int v1, int v2) {
+        this.op = op;
+        this.v1 = v1;
+        this.v2 = v2;
     }
-        return result;
+
+    void basicMath() {
+        int result = 0;
+        if (op.equals("+")) result = v1 + v2;
+        if (op.equals("-")) result = v1 - v2;
+        if (op.equals("*")) result = v1 * v2;
+        if (op.equals("/")) result = v1 / v2;
+        System.out.println(result);
     }
 }
