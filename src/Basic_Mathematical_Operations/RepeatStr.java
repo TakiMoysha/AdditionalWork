@@ -10,9 +10,7 @@ class RepeatStr {
         this.text = text;
     }
 
-    void about() {
-        System.out.printf("%d, %s\n", n, text);
-    }
+    void about() {System.out.printf("%d, %s\n", n, text);}
 
     void multiText() {
         String result = "";

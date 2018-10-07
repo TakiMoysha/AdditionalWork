@@ -1,6 +1,6 @@
 package Basic_Mathematical_Operations;
 
-public class BasicMath {
+class BasicMath {
 
     String op;
     int v1;
@@ -20,4 +20,6 @@ public class BasicMath {
         if (op.equals("/")) result = v1 / v2;
         System.out.println(result);
     }
+
+    void about() {System.out.printf("Operation: %s. Value 1: %d. Value 2: %d", op, v1, v2);}
 }

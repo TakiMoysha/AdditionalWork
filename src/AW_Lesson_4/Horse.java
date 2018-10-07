@@ -13,7 +13,7 @@ public class Horse {
     }
 
     //Тернарный оператор
-    void about() {
+    private void about() {
         String sex = (isMale) ? "Male" : "Female";
         System.out.printf("Name: %s, age: %d, sec %s\t\t", name, age, sex);
     }

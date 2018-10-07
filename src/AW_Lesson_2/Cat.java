@@ -10,12 +10,10 @@ public class Cat {
     Tail tail;
     Talisman talisman;
 
-    void voice() {
-        System.out.println("Myau");
-    }
-
-    void sleep() {
-        System.out.println("Hrrr");
+    public Cat(int age, String name, boolean isMale) {
+        this.age = age;
+        this.name = name;
+        this.isMale = isMale;
     }
 
     void about() {
@@ -29,15 +27,15 @@ public class Cat {
                 "}";
         System.out.println(s);
     }
-
 //        Cat() {
 //        System.out.println("Вызвали пустой конструктор");
+
 //  }
+    void voice() {
+        System.out.println("Myau");
+    }
 
-    public Cat(int age, String name, boolean isMale) {
-        this.age = age;
-        this.name = name;
-        this.isMale = isMale;
-
+    void sleep() {
+        System.out.println("Hrrr");
     }
 }
