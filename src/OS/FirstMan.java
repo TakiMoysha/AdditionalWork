@@ -6,7 +6,7 @@ public class FirstMan extends Thread {
     {
         try{
             System.out.println("Я запустился!");
-            sleep(1000);
+            sleep(500);
         }catch(InterruptedException ignored){}
     }
 }
